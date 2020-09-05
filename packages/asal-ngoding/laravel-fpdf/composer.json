@@ -1,0 +1,11 @@
+{
+    "name": "asal-ngoding/laravel-pdf",
+    "description": "Fpdf for Laravel Framework",
+    "authors": [
+        {
+            "name": "asaromi",
+            "email": "a.sabililromi@gmail.com"
+        }
+    ],
+    "require": {}
+}
