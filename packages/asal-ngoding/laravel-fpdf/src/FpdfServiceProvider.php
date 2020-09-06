@@ -1,6 +1,6 @@
 <?php
 
-namespace AsalNgoding\Fpdf\Providers;
+namespace AsalNgoding\Fpdf;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,10 +13,10 @@ class FpdfServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('Fpdf', function ($app) {
-            return new Fpdf();
+        $this->app->bind('FPDF', function ($app) {
+            return new FPDF();
         });
-        
+
         $this->app->bind('PDF_Code128', function ($app) {
             return new PDF_Code128();
         });

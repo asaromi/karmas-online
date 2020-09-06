@@ -1,7 +1,5 @@
 <?php
-
 namespace AsalNgoding\Fpdf;
-
 /*******************************************************************************
 * FPDF                                                                         *
 *                                                                              *
@@ -9,11 +7,14 @@ namespace AsalNgoding\Fpdf;
 * Date:    2019-12-07                                                          *
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
+use Exception;
 
 define('FPDF_VERSION','1.82');
 
-class Fpdf
+class FPDF
 {
+protected $FontSpacingPt;      // current font spacing in points
+protected $FontSpacing;        // current font spacing in user units
 protected $page;               // current page number
 protected $n;                  // current object number
 protected $offsets;            // array of object offsets
@@ -73,6 +74,82 @@ protected $PDFVersion;         // PDF version number
 /*******************************************************************************
 *                               Public methods                                 *
 *******************************************************************************/
+//Cell with horizontal scaling if text is too wide
+
+    function CellFit($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=false, $link='', $scale=false, $force=true)
+    {
+        //Get string width
+        $str_width=$this->GetStringWidth($txt);
+
+        //Calculate ratio to fit cell
+        if($w==0)
+            $w = $this->w-$this->rMargin-$this->x;
+        $ratio = ($w-$this->cMargin*2)/$str_width;
+
+        $fit = ($ratio < 1 || ($ratio > 1 && $force));
+        if ($fit)
+        {
+            if ($scale)
+            {
+                //Calculate horizontal scaling
+                $horiz_scale=$ratio*100.0;
+                //Set horizontal scaling
+                $this->_out(sprintf('BT %.2F Tz ET',$horiz_scale));
+            }
+            else
+            {
+                //Calculate character spacing in points
+                $char_space=($w-$this->cMargin*2-$str_width)/max(strlen($txt)-1,1)*$this->k;
+                //Set character spacing
+                $this->_out(sprintf('BT %.2F Tc ET',$char_space));
+            }
+            //Override user alignment (since text will fill up cell)
+            $align='';
+        }
+
+        //Pass on to Cell method
+        $this->Cell($w,$h,$txt,$border,$ln,$align,$fill,$link);
+
+        //Reset character spacing/horizontal scaling
+        if ($fit)
+            $this->_out('BT '.($scale ? '100 Tz' : '0 Tc').' ET');
+    }
+
+    //Cell with horizontal scaling only if necessary
+    function CellFitScale($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=false, $link='')
+    {
+        $this->CellFit($w,$h,$txt,$border,$ln,$align,$fill,$link,true,false);
+    }
+
+    //Cell with horizontal scaling always
+    function CellFitScaleForce($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=false, $link='')
+    {
+        $this->CellFit($w,$h,$txt,$border,$ln,$align,$fill,$link,true,true);
+    }
+
+    //Cell with character spacing only if necessary
+    function CellFitSpace($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=false, $link='')
+    {
+        $this->CellFit($w,$h,$txt,$border,$ln,$align,$fill,$link,false,false);
+    }
+
+    //Cell with character spacing always
+    function CellFitSpaceForce($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=false, $link='')
+    {
+        //Same as calling CellFit directly
+        $this->CellFit($w,$h,$txt,$border,$ln,$align,$fill,$link,false,true);
+    }
+
+
+function SetFontSpacing($size)
+{
+    if($this->FontSpacingPt==$size)
+        return;
+    $this->FontSpacingPt = $size;
+    $this->FontSpacing = $size/$this->k;
+    if ($this->page>0)
+        $this->_out(sprintf('BT %.3f Tc ET', $size));
+}
 
 function __construct($orientation='P', $unit='mm', $size='A4')
 {
@@ -171,6 +248,7 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	// Set default PDF version number
 	$this->PDFVersion = '1.3';
 }
+
 
 function SetMargins($left, $top, $right=null)
 {
@@ -1683,6 +1761,8 @@ protected function _putfonts()
 	}
 }
 
+
+
 protected function _tounicodecmap($uv)
 {
 	$ranges = '';
@@ -1860,6 +1940,8 @@ protected function _puttrailer()
 	$this->_put('/Info '.($this->n-1).' 0 R');
 }
 
+
+
 protected function _enddoc()
 {
 	$this->_putheader();
@@ -1893,10 +1975,6 @@ protected function _enddoc()
 	$this->_put($offset);
 	$this->_put('%%EOF');
 	$this->state = 3;
-}
-
-function test(){
-	return "Berhasil";
 }
 }
 ?>
