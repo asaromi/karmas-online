@@ -174,7 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        AsalNgoding\Fpdf\Providers\FpdfServiceProvider::class,
+        AsalNgoding\Fpdf\FpdfServiceProvider::class,
 
     ],
 
@@ -207,6 +207,7 @@ return [
         'Event' => Illuminate\Support\Facades\Event::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Fpdf' => AsalNgoding\Fpdf\Fpdf::class,
+        'PDF_Code128' => AsalNgoding\Fpdf\PDF_Code128::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Http' => Illuminate\Support\Facades\Http::class,
