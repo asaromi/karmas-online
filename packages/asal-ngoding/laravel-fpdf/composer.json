@@ -7,5 +7,17 @@
             "email": "a.sabililromi@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AsalNgoding\\Fpdf\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AsalNgoding\\Fpdf\\FpdfServiceProvider"
+            ]
+        }
+    }
 }
