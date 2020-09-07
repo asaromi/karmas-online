@@ -35,13 +35,15 @@ class HomeController extends Controller
     }
 
     public function print(){
-        $pdf = new PDF_Code128('P','mm',array(85.5,54));
+        $pdf = new PDF_Code128('l','mm',array(54,85.4));
         $pdf->AddPage();
 
         $pdf->Image('storage/img/foto.jpg', 70, 59, 17, 22);
 
         $pdf->AddFont('Arial Narrow','','ARIALNB.php');
-        $pdf->SetFont('Arial','B',16);
+        $pdf->SetFont('Arial Narrow','',9,'L');
+        $pdf->Cell(40,10,'Hello World!');
+        
         dd($pdf->Output('','anu'));
     }
 }
