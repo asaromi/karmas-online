@@ -7,6 +7,7 @@ namespace AsalNgoding\Fpdf;
 * Date:    2019-12-07                                                          *
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
+
 use Exception;
 
 define('FPDF_VERSION','1.82');
@@ -204,9 +205,9 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	elseif($unit=='in')
 		$this->k = 72;
 	else
-		$this->Error('Incorrect unit: '.$unit);
-	// Page sizes
-	$this->StdPageSizes = array('a3'=>array(841.89,1190.55), 'a4'=>array(595.28,841.89), 'a5'=>array(420.94,595.28),
+		$this->Error('Incorrect unit: '.$unit); 
+	// Page sizes 1mm = 2.834666666666667
+	$this->StdPageSizes = array('a3'=>array(841.89,1190.55), 'a4'=>array(595.28,841.89), 'a5'=>array(420.94,595.28), 'karmas'=>array(153.2987733333334,242.3158106666667),
 		'letter'=>array(612,792), 'legal'=>array(612,1008));
 	$size = $this->_getpagesize($size);
 	$this->DefPageSize = $size;
@@ -233,7 +234,7 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	// Page rotation
 	$this->CurRotation = 0;
 	// Page margins (1 cm)
-	$margin = 28.35/$this->k;
+	$margin = 1.35/$this->k;
 	$this->SetMargins($margin,$margin);
 	// Interior cell margin (1 mm)
 	$this->cMargin = $margin/10;
@@ -1940,7 +1941,7 @@ protected function _puttrailer()
 	$this->_put('/Info '.($this->n-1).' 0 R');
 }
 
-
+ 
 
 protected function _enddoc()
 {
