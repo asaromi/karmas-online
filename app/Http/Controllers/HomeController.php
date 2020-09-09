@@ -118,6 +118,7 @@ class HomeController extends Controller
 
         $pdf->AddFont('Arial Narrow','','ARIALNB.php');
         $pdf->SetFont('Arial Narrow','',9,'L');
+        
         $pdf->Code128(43.6,45,$user->nim,38,4);
 
         $pdf->Cell(0,18,'',0,1); //Space kosong atas
