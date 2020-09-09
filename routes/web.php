@@ -23,4 +23,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/print', 'HomeController@print')->name('print');
+Route::put('/print', 'HomeController@print')->name('print');
