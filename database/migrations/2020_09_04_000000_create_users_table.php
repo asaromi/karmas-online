@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->date('birthdate');
             $table->string('city');
             $table->string('password');
-            $table->string('avatar')->default('anu.jpg');
+            $table->string('avatar')->nullable();
             $table->timestamps();
 
             $table->foreign('departmentId')->references('id')->on('departments');
