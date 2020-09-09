@@ -114,44 +114,44 @@ class HomeController extends Controller
                 break;
         }
 
-        $pdf->Image($user->avatar, 3, 19, 17, 22);
+        $pdf->Image($user->avatar, 2.5, 19, 17, 22);
 
         $pdf->AddFont('Arial Narrow','','ARIALNB.php');
         $pdf->SetFont('Arial Narrow','',9,'L');
-        $pdf->Code128(43.6,45,'M0517004',38,4);
+        $pdf->Code128(43.6,45,$user->nim,38,4);
 
         $pdf->Cell(0,18,'',0,1); //Space kosong atas
 
-        $pdf->Cell(22,4,'',0,0);
-        $pdf->Cell(12,4,'Nama',0,0);
-        $pdf->Cell(2,4,':',0,0);
-        $pdf->CellFitScale(49,4,$user->name,0,1); //,1); ->akhir baris
+        $pdf->Cell(21,4,'',0,0);
+        $pdf->Cell(11,4,'Nama',0,0);
+        $pdf->Cell(1,4,':',0,0);
+        $pdf->CellFitScale(48,4,$user->name,0,1); //,1); ->akhir baris
 
 
-        $pdf->Cell(22,4,'',0,0);
-        $pdf->Cell(12,4,'NIM',0,0); 
-        $pdf->Cell(2,4,':',0,0);
-        $pdf->CellFitScale(49,4,$user->nim,0,1); //,1); ->akhir baris 
+        $pdf->Cell(21,4,'',0,0);
+        $pdf->Cell(11,4,'NIM',0,0); 
+        $pdf->Cell(1,4,':',0,0);
+        $pdf->CellFitScale(48,4,$user->nim,0,1); //,1); ->akhir baris 
 
-        $pdf->Cell(22,4,'',0,0);
-        $pdf->Cell(12,4,'Tgl. Lahir',0,0);
-        $pdf->Cell(2,4,':',0,0);
-        $pdf->CellFitScale(49,4,$birthdate,0,1); //,1); ->akhir baris
+        $pdf->Cell(21,4,'',0,0);
+        $pdf->Cell(11,4,'Tgl. Lahir',0,0);
+        $pdf->Cell(1,4,':',0,0);
+        $pdf->CellFitScale(48,4,$birthdate,0,1); //,1); ->akhir baris
 
-        $pdf->Cell(22,4,'',0,0);
-        $pdf->Cell(12,4,'Prodi',0,0);
-        $pdf->Cell(2,4,':',0,0);
-        $pdf->CellFitScale(49,4,$degree->name.'-'.$department,0,1); //,1); ->akhir baris
+        $pdf->Cell(21,4,'',0,0);
+        $pdf->Cell(11,4,'Prodi',0,0);
+        $pdf->Cell(1,4,':',0,0);
+        $pdf->CellFitScale(48,4,$degree->name.'-'.$department,0,1); //,1); ->akhir baris
 
-        $pdf->Cell(22,4,'',0,0);
-        $pdf->Cell(12,4,'Fakultas',0,0);
-        $pdf->Cell(2,4,':',0,0);
-        $pdf->CellFitScale(49,4,$faculty,0,1); //,1); ->akhir baris 
+        $pdf->Cell(21,4,'',0,0);
+        $pdf->Cell(11,4,'Fakultas',0,0);
+        $pdf->Cell(1,4,':',0,0);
+        $pdf->CellFitScale(48,4,$faculty,0,1); //,1); ->akhir baris 
 
-        $pdf->Cell(22,4,'',0,0);
-        $pdf->Cell(12,4,'Asal',0,0);
-        $pdf->Cell(2,4,':',0,0);
-        $pdf->CellFitScale(49,4,$user->city,0,1); //,1); ->akhir baris 
+        $pdf->Cell(21,4,'',0,0);
+        $pdf->Cell(11,4,'Asal',0,0);
+        $pdf->Cell(1,4,':',0,0);
+        $pdf->CellFitScale(48,4,$user->city,0,1); //,1); ->akhir baris 
 
         $pdf->Output('','Karmas Digital '. '- ' .$user->nim.'.pdf');
     }
