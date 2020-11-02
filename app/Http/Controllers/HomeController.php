@@ -82,31 +82,31 @@ class HomeController extends Controller
 
         switch ($degree->id) {
             case 1:
-                $pdf->Image('storage/img/sarjana.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/sarjana.png', 0,0, '85.5', '54');
                 break;
             
             case 2:
-                $pdf->Image('storage/img/pasca.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/pasca.png', 0,0, '85.5', '54');
                 break;
 
             case 3:
-                $pdf->Image('storage/img/pasca.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/pasca.png', 0,0, '85.5', '54');
                 break;
             
             case 4:
-                $pdf->Image('storage/img/transfer.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/transfer.png', 0,0, '85.5', '54');
                 break;
             
             case 5:
-                $pdf->Image('storage/img/vokasi.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/vokasi.png', 0,0, '85.5', '54');
                 break;
 
             case 6:
-                $pdf->Image('storage/img/vokasi.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/vokasi.png', 0,0, '85.5', '54');
                 break;
 
             case 7:
-                $pdf->Image('storage/img/vokasi.jpg', 0,0, '85.5', '54');
+                $pdf->Image('storage/img/vokasi.png', 0,0, '85.5', '54');
                 break;
 
             default:
@@ -124,33 +124,33 @@ class HomeController extends Controller
         $pdf->Cell(0,18,'',0,1); //Space kosong atas
 
         $pdf->Cell(21,4,'',0,0);
-        $pdf->Cell(11,4,'Nama',0,0);
+        $pdf->Cell(13,4,'Nama',0,0);
         $pdf->Cell(1,4,':',0,0);
         $pdf->CellFitScale(48,4,$user->name,0,1); //,1); ->akhir baris
 
 
         $pdf->Cell(21,4,'',0,0);
-        $pdf->Cell(11,4,'NIM',0,0); 
+        $pdf->Cell(13,4,'NIM',0,0); 
         $pdf->Cell(1,4,':',0,0);
         $pdf->CellFitScale(48,4,$user->nim,0,1); //,1); ->akhir baris 
 
         $pdf->Cell(21,4,'',0,0);
-        $pdf->Cell(11,4,'Tgl. Lahir',0,0);
+        $pdf->Cell(13,4,'Tgl. Lahir',0,0);
         $pdf->Cell(1,4,':',0,0);
         $pdf->CellFitScale(48,4,$birthdate,0,1); //,1); ->akhir baris
 
         $pdf->Cell(21,4,'',0,0);
-        $pdf->Cell(11,4,'Prodi',0,0);
+        $pdf->Cell(13,4,'Prodi',0,0);
         $pdf->Cell(1,4,':',0,0);
         $pdf->CellFitScale(48,4,$degree->name.'-'.$department,0,1); //,1); ->akhir baris
 
         $pdf->Cell(21,4,'',0,0);
-        $pdf->Cell(11,4,'Fakultas',0,0);
+        $pdf->Cell(13,4,'Fakultas',0,0);
         $pdf->Cell(1,4,':',0,0);
         $pdf->CellFitScale(48,4,$faculty,0,1); //,1); ->akhir baris 
 
         $pdf->Cell(21,4,'',0,0);
-        $pdf->Cell(11,4,'Asal',0,0);
+        $pdf->Cell(13,4,'Asal',0,0);
         $pdf->Cell(1,4,':',0,0);
         $pdf->CellFitScale(48,4,$user->city,0,1); //,1); ->akhir baris 
 
