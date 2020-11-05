@@ -111,7 +111,7 @@
                         dataType: "json",
                         success: function (data) {
                             console.log(data);
-                            $('select[name="department"]').empty();
+                            $('select[name="department"]').html('<option value="">-- Pilih Program Studi --</option>');
                             $.each(data, (key,value) => {
                                 $('select[name="department"]').append('<option value="'+ value.id +'">'+value.degree.name+' '+value.name +'</option>');
                             })
