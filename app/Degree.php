@@ -8,7 +8,7 @@ class Degree extends Model
 {
     protected $fillable = ['name'];
 
-    public function student(){
-        return $this->hasMany('App\User', 'departmentId', 'id');
+    public function department(){
+        return $this->hasMany('App\Degree', 'degreeId', 'id');
     }
 }

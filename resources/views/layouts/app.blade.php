@@ -18,6 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- External Style & Script -->
+    <link defer href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
 </head>
 <body>
     <div id="app">
@@ -42,6 +47,9 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @else
                             <li class="nav-item dropdown">
@@ -88,6 +96,32 @@
             $("#avatar").change(function () {
                 display(this);
             });
+
+            $('input#birthdate').datepicker({  
+                format: 'yyyy-mm-dd'
+            });
+
+            $('select[name="faculty"]').on('change', () => {
+                var facultyId = $('select[name="faculty"]').val();
+                console.log(facultyId);
+                if(facultyId){
+                    $.ajax({
+                        url: '/register/getDept/'+facultyId,
+                        type: "GET",
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data);
+                            $('select[name="department"]').empty();
+                            $.each(data, (key,value) => {
+                                $('select[name="department"]').append('<option value="'+ value.id +'">'+value.degree.name+' '+value.name +'</option>');
+                            })
+                        }
+                    });
+                } else {
+                    console.log("Not Detected");
+                    $('select[name="state"]').empty();
+                }
+            })
         });
     </script>
 </body>

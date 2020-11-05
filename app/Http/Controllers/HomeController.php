@@ -70,7 +70,7 @@ class HomeController extends Controller
             }
         }
 
-        $degree = $user->degree;
+        $degree = $user;
         $department = $user->department->name;
         $faculty = $user->department->faculty->name;
 

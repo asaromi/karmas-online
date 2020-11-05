@@ -16,10 +16,12 @@ class CreateDepartmentsTable extends Migration
         Schema::create('departments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('facultyId');
+            $table->unsignedBigInteger('degreeId');
             $table->string('name');
             $table->timestamps();
 
             $table->foreign('facultyId')->references('id')->on('faculties');
+            $table->foreign('degreeId')->references('id')->on('degrees');
         });
     }
 

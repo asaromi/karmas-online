@@ -17,7 +17,6 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('nim')->unique();
             $table->unsignedBigInteger('departmentId');
-            $table->unsignedBigInteger('degreeId');
             $table->string('name');
             $table->integer('years');
             $table->date('birthdate');
@@ -27,7 +26,6 @@ class CreateUsersTable extends Migration
             $table->timestamps();
 
             $table->foreign('departmentId')->references('id')->on('departments');
-            $table->foreign('degreeId')->references('id')->on('degrees');
         });
     }
 
