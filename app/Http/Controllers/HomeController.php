@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $degree = $user->degree->name;
+        $degree = $user->department->degree->name;
         $department = $user->department->name;
         $faculty = $user->department->faculty->name;
 
