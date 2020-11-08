@@ -49,7 +49,7 @@
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link" href="{{ route('regist') }}">{{ __('Register') }}</a>
                             </li>
                         @else
                             <li class="nav-item dropdown">
@@ -113,7 +113,13 @@
                             console.log(data);
                             $('select[name="department"]').html('<option value="">-- Pilih Program Studi --</option>');
                             $.each(data, (key,value) => {
-                                $('select[name="department"]').append('<option value="'+ value.id +'">'+value.degree.name+' '+value.name +'</option>');
+                                if(value.degreeId === 4){
+                                    const degree = value.degree.name+" (Transfer)";
+                                    $('select[name="department"]').append('<option value="'+ value.id +'">'+degree+' '+value.name +'</option>');
+                                } else {
+                                    const degree = value.degree.name;
+                                    $('select[name="department"]').append('<option value="'+ value.id +'">'+degree+' '+value.name +'</option>');
+                                }
                             })
                         }
                     });
