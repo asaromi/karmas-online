@@ -523,5 +523,62 @@ class DepartmentSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
+
+        // FIB
+        DB::table('departments')->insert([
+            'facultyId' => 20,
+            'name' => 'Sastra Daerah',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        DB::table('departments')->insert([
+            'facultyId' => 20,
+            'name' => 'Sastra Indonesia',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 20,
+            'name' => 'Sastra Inggris',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 20,
+            'name' => 'Ilmu Sejarah',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 20,
+            'name' => 'Sastra Indonesia',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 21,
+            'name' => 'Pendidikan Jasmani Kesehatan dan Rekreasi',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 21,
+            'name' => 'Pendidikan Kepelatihan Olahraga',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
     }
 }

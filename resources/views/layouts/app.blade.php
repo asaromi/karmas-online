@@ -115,10 +115,10 @@
                             $.each(data, (key,value) => {
                                 if(value.degreeId === 4){
                                     const degree = value.degree.name+" (Transfer)";
-                                    $('select[name="department"]').append('<option value="'+ value.id +'">'+degree+' '+value.name +'</option>');
+                                    $('select[name="department"]').append('<option value="'+ value.id +'">'+value.name+' - '+degree+'</option>');
                                 } else {
                                     const degree = value.degree.name;
-                                    $('select[name="department"]').append('<option value="'+ value.id +'">'+degree+' '+value.name +'</option>');
+                                    $('select[name="department"]').append('<option value="'+ value.id +'">'+value.name+' - '+degree+'</option>');
                                 }
                             })
                         }
