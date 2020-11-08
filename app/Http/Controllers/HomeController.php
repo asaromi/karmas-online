@@ -142,7 +142,7 @@ class HomeController extends Controller
         $pdf->Cell(21,4,'',0,0);
         $pdf->Cell(13,4,'Prodi',0,0);
         $pdf->Cell(1,4,':',0,0);
-        $pdf->CellFitScale(48,4,$degree->name.'-'.$department,0,1); //,1); ->akhir baris
+        $pdf->CellFitScale(48,4,$degree->name.' '.$department,0,1); //,1); ->akhir baris
 
         $pdf->Cell(21,4,'',0,0);
         $pdf->Cell(13,4,'Fakultas',0,0);

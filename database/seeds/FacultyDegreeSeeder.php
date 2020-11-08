@@ -63,7 +63,7 @@ class FacultyDegreeSeeder extends Seeder
         
         DB::table('faculties')->insert([ //8
             'code' => 'K',
-            'name' => 'Keguruan Dan Ilmu Pendidikan',
+            'name' => 'Keguruan dan Ilmu Pendidikan',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -105,14 +105,7 @@ class FacultyDegreeSeeder extends Seeder
 
         DB::table('faculties')->insert([ //14
             'code' => 'X',
-            'name' => 'Keguruan Dan Ilmu Pendidikan',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('faculties')->insert([ //15
-            'code' => 'P',
-            'name' => 'Keguruan Dan Ilmu Pendidikan',
+            'name' => 'Keguruan dan Ilmu Pendidikan',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
