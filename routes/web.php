@@ -26,5 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::put('/print', 'HomeController@print')->name('print');
 
 Route::get('/register', 'Auth\RegisterController@index')->name('regist');
-Route::post('/register', 'Auth\RegisterController@index')->name('register');
+Route::post('/register', 'Auth\RegisterController@create')->name('register');
 Route::get('/register/getDept/{id}', 'Auth\RegisterController@getDept')->name('getDepartment');
