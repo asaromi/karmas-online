@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Session;
+use Exception;
 
 class RegisterController extends Controller
 {
@@ -94,10 +95,10 @@ class RegisterController extends Controller
                 'city' => $data['city'],
             ]);
 
-            Session::flash('success','Registrasi Sukses');
+            Session::flash('success','Registration Success');
             return redirect('login');
-        } catch (Throwable $th) {
-            Session::flash('failed','Registrasi Gagal');
+        } catch (Exception $exception) {
+            Session::flash('failed','Registration Failed : <br>'.$exception->getMessage());
             return redirect('register');
         }
     }
