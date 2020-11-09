@@ -3,7 +3,8 @@
 @section('content')
 @if (session('failed'))
     <div class="alert alert-danger">
-        {{ session('failed') }}
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>{{ session('failed') }}</strong>
     </div>
 @endif
 
