@@ -18,9 +18,9 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('Name') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
@@ -32,9 +32,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
+                            <label for="nim" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('NIM') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="nim" type="text" class="form-control @error('email') is-invalid @enderror" name="nim" value="{{ old('nim') }}" required autocomplete="nim">
 
                                 @error('nim')
@@ -46,9 +46,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('PIN') }}</label>
+                            <label for="password" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('PIN') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
@@ -60,9 +60,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="birthdate" class="col-md-4 col-form-label text-md-right">{{ __('Tanggal Lahir') }}</label>
+                            <label for="birthdate" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('Tanggal Lahir') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="birthdate" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" required autocomplete="birthdate">
 
                                 @error('birthdate')
@@ -74,9 +74,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="faculty" class="col-md-4 col-form-label text-md-right">{{ __('Fakultas') }}</label>
+                            <label for="faculty" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('Fakultas') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <select name="faculty" id="faculty" class="form-control @error('faculty') is-invalid @enderror" required autocomplete="faculty">
                                     <option value="">-- Pilih Fakultas --</option>
                                     @foreach ($faculties as $f)
@@ -93,9 +93,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="department" class="col-md-4 col-form-label text-md-right">{{ __('Program Studi') }}</label>
+                            <label for="department" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('Program Studi') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <select name="department" id="department" class="form-control @error('department') is-invalid @enderror" required autocomplete="department">
                                     <option value="">-- Pilih Program Studi --</option>
                                 </select>
@@ -109,9 +109,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="years" class="col-md-4 col-form-label text-md-right">{{ __('Angkatan') }}</label>
+                            <label for="years" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('Angkatan') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="years" value="2020" type="number" class="form-control @error('years') is-invalid @enderror" name="years" required autocomplete="years">
 
                                 @error('years')
@@ -123,9 +123,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Kota Asal') }}</label>
+                            <label for="city" class="offset-md-1 col-md-3 col-form-label text-md-left">{{ __('Kota Asal') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" required autocomplete="city">
 
                                 @error('city')
@@ -136,12 +136,10 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
+                        <div class="form-group row mb-0 justify-content-center">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Register') }}
+                            </button>
                         </div>
                     </form>
                 </div>
