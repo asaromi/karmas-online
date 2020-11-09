@@ -558,14 +558,6 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 20,
-            'name' => 'Sastra Indonesia',
-            'degreeId' => 1,
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('departments')->insert([
             'facultyId' => 21,
             'name' => 'Pendidikan Jasmani Kesehatan dan Rekreasi',
             'degreeId' => 1,
