@@ -98,7 +98,7 @@ class RegisterController extends Controller
             Session::flash('success','Registration Success');
             return redirect('login');
         } catch (Exception $exception) {
-            Session::flash('failed','Registration Failed : <br>'.$exception->getMessage());
+            Session::flash('failed','Registration Failed : '.$exception->getMessage());
             return redirect('register');
         }
     }

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-@if ($message = Session::get('sukses'))
-<div class="alert alert-success alert-block">
-    <button type="button" class="close" data-dismiss="alert">×</button> 
-    <strong>{{ $message }}</strong>
-</div>
+@if (session('success'))
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>{{ session('success') }}</strong>
+    </div>
 @endif
 <div class="container">
     <div class="row justify-content-center">
