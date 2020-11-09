@@ -580,5 +580,165 @@ class DepartmentSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Linguistik',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Kajian Budaya',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Komunikasi',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Hukum',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Ekonomi',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Kedokteran',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Kesehatan Masyarakat',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Penyuluhan Pembangunan/Pemberdayaan Masyarakat',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Pertanian',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Lingkungan',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Teknik Sipil',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Teknik Mesin',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Pendidikan',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Pendidikan Ilmu Pengetahuan Alam',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Pendidikan Bahasa Indonesia',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Keolahragaan',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Pendidikan Sejarah',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Pendidikan Ekonomi',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Ilmu Fisika',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Biologi',
+            'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
     }
 }
