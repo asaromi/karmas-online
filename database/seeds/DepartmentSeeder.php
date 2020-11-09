@@ -584,7 +584,7 @@ class DepartmentSeeder extends Seeder
         DB::table('departments')->insert([
             'facultyId' => 13,
             'name' => 'Linguistik',
-            'degreeId' => 1,
+            'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
