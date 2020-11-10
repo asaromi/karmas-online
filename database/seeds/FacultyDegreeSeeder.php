@@ -83,29 +83,36 @@ class FacultyDegreeSeeder extends Seeder
         ]);
 
         DB::table('faculties')->insert([ //11
-            'code' => 'A',
+            'code' => 'A/S/T',
             'name' => 'Pascasarjana',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('faculties')->insert([ //12
-            'code' => 'S',
-            'name' => 'Pascasarjana',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('faculties')->insert([ //13
-            'code' => 'T',
-            'name' => 'Pascasarjana',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('faculties')->insert([ //14
             'code' => 'X',
             'name' => 'Keguruan dan Ilmu Pendidikan',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('faculties')->insert([ //12
+            'code' => 'S',
+            'name' => 'Dokter Spesialis',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('faculties')->insert([ //12
+            'code' => 'X',
+            'name' => 'Profesi',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('faculties')->insert([
+            'code' => 'V',
+            'name' => 'Sekolah Vokasi',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -164,6 +171,12 @@ class FacultyDegreeSeeder extends Seeder
 
         DB::table('degrees')->insert([
             'name' => 'D4',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('degrees')->insert([
+            'name' => 'Sp',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);

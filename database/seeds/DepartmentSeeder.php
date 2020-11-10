@@ -574,7 +574,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Linguistik',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -582,7 +582,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Kajian Budaya',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -590,7 +590,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Komunikasi',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -598,7 +598,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Hukum',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -606,7 +606,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Ekonomi',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -614,7 +614,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Kedokteran',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -622,7 +622,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Kesehatan Masyarakat',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -630,7 +630,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Penyuluhan Pembangunan/Pemberdayaan Masyarakat',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -638,7 +638,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Pertanian',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -646,7 +646,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Lingkungan',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -654,7 +654,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Teknik Sipil',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -662,7 +662,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Teknik Mesin',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -670,7 +670,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Pendidikan',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -678,7 +678,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Pendidikan Ilmu Pengetahuan Alam',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -686,7 +686,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Pendidikan Bahasa Indonesia',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -694,7 +694,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Keolahragaan',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -702,7 +702,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Pendidikan Sejarah',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -710,7 +710,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Pendidikan Ekonomi',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -718,7 +718,7 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Ilmu Fisika',
             'degreeId' => 3,
             'created_at' => date("Y-m-d H:i:s"),
@@ -726,9 +726,385 @@ class DepartmentSeeder extends Seeder
         ]);
 
         DB::table('departments')->insert([
-            'facultyId' => 13,
+            'facultyId' => 10,
             'name' => 'Biologi',
             'degreeId' => 3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Keolahragaan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Lingkungan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Seni Rupa',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Kesehatan Masyarakat',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Guru Sekolah Dasar',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Luar Biasa',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Seni',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Kimia',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Teknik Kimia',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Fisika',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Kimia',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Biologi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Linguistik',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Arsitektur',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Pancasila dan Kewarganegaraan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Guru Vokasi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Komunikasi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Administrasi Publik',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Sosiologi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Hukum',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Kenotariatan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Manajemen',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ekonomi dan Studi Pembangunan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Akuntansi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Bahasa dan Sastra Daerah',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Gizi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Agronomi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Penyuluhan Pembangunan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Agribisnis',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Tanah',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Peternakan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Kajian Budaya',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Teknik Industri',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Teknologi Pendidikan',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Sains',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Bahasa Indonesia',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Matematika',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Sejarah',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Geografi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Bahasa Inggris',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Biosains',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Ilmu Fisika',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Teknik Sipil',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Teknik Mesin',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 10,
+            'name' => 'Pendidikan Ekonomi',
+            'degreeId' => 2,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 5,
+            'name' => 'Kesehatan Kerja',
+            'degreeId' => 7,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('departments')->insert([
+            'facultyId' => 5,
+            'name' => 'Kebidanan Terapan',
+            'degreeId' => 7,
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
