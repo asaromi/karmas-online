@@ -17,6 +17,6 @@ class Department extends Model
     }
 
     public function student(){
-        return $this->hasMany('App\User', 'departmentId', 'id');
+        return $this->hasMany('App\User', 'departmentId', 'code');
     }
 }

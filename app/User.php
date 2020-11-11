@@ -38,6 +38,6 @@ class User extends Authenticatable
     // ];
 
     public function department(){
-        return $this->belongsTo('App\Department', 'departmentId', 'id');
+        return $this->belongsTo('App\Department', 'departmentId', 'code');
     }
 }
