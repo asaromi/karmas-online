@@ -16,16 +16,16 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nim')->unique();
-            $table->unsignedBigInteger('departmentId');
+            $table->string('departmentId');
             $table->string('name');
-            $table->integer('years');
-            $table->date('birthdate');
+            $table->integer('years')->default(2020);
+            $table->date('birthdate')->nullable();
             $table->string('city');
             $table->string('password');
             $table->string('avatar')->nullable();
             $table->timestamps();
 
-            $table->foreign('departmentId')->references('id')->on('departments');
+            $table->foreign('departmentId')->references('code')->on('departments');
         });
     }
 
