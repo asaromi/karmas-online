@@ -104,7 +104,7 @@ class RegisterController extends Controller
     }
 
     public function getDept($id){
-        $department = Department::where("facultyId",$id)->select("degreeId","name","id")->orderBy("name")->with("degree:id,name")->get();
+        $department = Department::where("facultyId",$id)->select("degreeId","name","id")->orderByDesc("degreeId")->orderBy("name")->with("degree:id,name")->get();
         return json_encode($department);
     }
 }
