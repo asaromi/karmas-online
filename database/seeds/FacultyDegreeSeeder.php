@@ -41,7 +41,7 @@ class FacultyDegreeSeeder extends Seeder
         ]);
 
         DB::table('faculties')->insert([ //5
-            'code' => 'G',
+            'code' => 'G/R/S',
             'name' => 'Kedokteran',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -75,23 +75,9 @@ class FacultyDegreeSeeder extends Seeder
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
-        DB::table('faculties')->insert([ //10
-            'code' => 'R',
-            'name' => 'Kedokteran',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
         DB::table('faculties')->insert([ //11
             'code' => 'A/S/T',
             'name' => 'Pascasarjana',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('faculties')->insert([ //12
-            'code' => 'X',
-            'name' => 'Keguruan dan Ilmu Pendidikan',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -177,6 +163,12 @@ class FacultyDegreeSeeder extends Seeder
 
         DB::table('degrees')->insert([
             'name' => 'Sp',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('degrees')->insert([
+            'name' => 'Profesi',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
