@@ -109,6 +109,14 @@ class HomeController extends Controller
                 $pdf->Image('storage/img/vokasi.png', 0,0, '85.5', '54');
                 break;
 
+            case 8:
+                $pdf->Image('storage/img/pasca.png', 0,0, '85.5', '54');
+                break;
+
+            case 9:
+                $pdf->Image('storage/img/profesi.png', 0,0, '85.5', '54');
+                break;
+
             default:
                 $pdf->Image('storage/img/salah.jpg', 0,0, '85.5', '54');
                 break;
@@ -117,7 +125,7 @@ class HomeController extends Controller
         $pdf->Image($user->avatar, 2.5, 19, 17, 22);
 
         $pdf->AddFont('Arial Narrow','','ARIALNB.php');
-        $pdf->SetFont('Arial Narrow','',9,'L');
+        $pdf->SetFont('Arial Narrow','',8,'L');
         
         $pdf->Code128(43.6,45,$user->nim,38,4);
 
@@ -142,8 +150,11 @@ class HomeController extends Controller
         $pdf->Cell(21,4,'',0,0);
         $pdf->Cell(13,4,'Prodi',0,0);
         $pdf->Cell(1,4,':',0,0);
-        $pdf->CellFitScale(48,4,$degree->name.' '.$department,0,1); //,1); ->akhir baris
-
+        if($degree->id != 1){
+            $pdf->CellFitScale(48,4,$degree->name.' '.$department,0,1); //,1); ->akhir baris
+        } else {
+            $pdf->CellFitScale(48,4,$department,0,1); //,1); ->akhir baris
+        }
         $pdf->Cell(21,4,'',0,0);
         $pdf->Cell(13,4,'Fakultas',0,0);
         $pdf->Cell(1,4,':',0,0);
