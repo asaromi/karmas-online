@@ -242,7 +242,25 @@ class DepartmentSeeder extends Seeder
             'updated_at' => date("Y-m-d H:i:s")
         ]);
         
+        DB::table('departments')->insert([
+            'facultyId' => 5,
+            'name' => 'Kedokteran Koasistensi',
+            'code' => 'G99',
+            'degreeId' => 1,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
         // FP
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Agribisnis Hortikultura',
+            'code' => 'H33',
+            'degreeId' => 6,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
         DB::table('departments')->insert([
             'facultyId' => 6,
             'name' => 'Penyuluhan dan Komunikasi Pertanian',
@@ -545,7 +563,7 @@ class DepartmentSeeder extends Seeder
         DB::table('departments')->insert([
             'facultyId' => 8,
             'name' => 'Pendidikan Ekonomi',
-            'code' => 'K74',
+            'code' => 'K76',
             'degreeId' => 1,
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -1672,6 +1690,33 @@ class DepartmentSeeder extends Seeder
             'facultyId' => 13,
             'name' => 'Farmasi',
             'code' => 'V37',
+            'degreeId' => 6,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Akuntansi PSDKU',
+            'code' => 'V38',
+            'degreeId' => 6,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Teknik Informatika PSDKU',
+            'code' => 'V39',
+            'degreeId' => 6,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        DB::table('departments')->insert([
+            'facultyId' => 13,
+            'name' => 'Teknologi Hasil Pertanian PSDKU',
+            'code' => 'V40',
             'degreeId' => 6,
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
