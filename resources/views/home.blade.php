@@ -18,7 +18,6 @@
                                     <form method="POST" action=" {{ route('print') }} " enctype="multipart/form-data">
                                         @csrf
                                         @method('PUT')
-                                        Upload Foto (3x4)
                                         @php
                                             if(!$user->avatar){
                                                 $user->avatar = 'storage/img/foto.jpg';

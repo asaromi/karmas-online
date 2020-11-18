@@ -32,7 +32,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="offset-md-2 col-md-2 col-form-label text-md-left">{{ __('Pin') }}</label>
+                            <label for="password" class="offset-md-2 col-md-2 col-form-label text-md-left">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
