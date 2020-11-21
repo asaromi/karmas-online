@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\User;
 
 class LoginController extends Controller
 {
@@ -47,19 +48,31 @@ class LoginController extends Controller
         ]);
     
         //TAMPUNG INFORMASI LOGINNYA, DIMANA KOLOM TYPE PERTAMA BERSIFAT DINAMIS BERDASARKAN VALUE DARI PENGECEKAN DIATAS
-      
-            $login = [
-                'nim' => $request->nim,
-                'password' => $request->password
-            ];
+        $login = [
+            'nim' => $request->nim,
+            'password' => $request->password
+        ];
 
-            // dd($login);
-                //LAKUKAN LOGIN
-            if (auth()->attempt($login)) {
-                //JIKA BERHASIL, MAKA REDIRECT KE HALAMAN HOME
-                return redirect()->route('home');
-            } else
-                return redirect()->route('login');
+        $user = User::where('nim', $login['nim'])->first();
+        $avatar = "storage/img/avatar/".$login['nim'];
+        if(file_exists($avatar.'.jpg')){
+            $avatar .= '.jpg';
+            $user->update(['avatar' => $avatar]);
+        } else if(file_exists($avatar.'.jpeg')){
+            $avatar .= '.jpeg';
+            $user->update(['avatar' => $avatar]);
+        } else if(file_exists($avatar.'.png')){
+            $avatar .= '.png';
+            $user->update(['avatar' => $avatar]);
+        }
+
+        // dd($login);
+            //LAKUKAN LOGIN
+        if (auth()->attempt($login)) {
+            //JIKA BERHASIL, MAKA REDIRECT KE HALAMAN HOME
+            return redirect()->route('home');
+        } else
+            return redirect()->route('login');
         
     }
 }
