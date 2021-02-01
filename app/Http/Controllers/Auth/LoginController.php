@@ -54,16 +54,18 @@ class LoginController extends Controller
         ];
 
         $user = User::where('nim', $login['nim'])->first();
-        $avatar = "storage/img/avatar/".$login['nim'];
-        if(file_exists($avatar.'.jpg')){
-            $avatar .= '.jpg';
-            $user->update(['avatar' => $avatar]);
-        } else if(file_exists($avatar.'.jpeg')){
-            $avatar .= '.jpeg';
-            $user->update(['avatar' => $avatar]);
-        } else if(file_exists($avatar.'.png')){
-            $avatar .= '.png';
-            $user->update(['avatar' => $avatar]);
+        if($user) {
+            $avatar = "storage/img/avatar/".$login['nim'];
+            if(file_exists($avatar.'.jpg')){
+                $avatar .= '.jpg';
+                $user->update(['avatar' => $avatar]);
+            } else if(file_exists($avatar.'.jpeg')){
+                $avatar .= '.jpeg';
+                $user->update(['avatar' => $avatar]);
+            } else if(file_exists($avatar.'.png')){
+                $avatar .= '.png';
+                $user->update(['avatar' => $avatar]);
+            }
         }
 
         // dd($login);
