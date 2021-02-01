@@ -71,8 +71,10 @@ class LoginController extends Controller
         if (auth()->attempt($login)) {
             //JIKA BERHASIL, MAKA REDIRECT KE HALAMAN HOME
             return redirect()->route('home');
+        } else if(!$user){
+            return response("Mahasiswa tidak ada dalam database", 400);
         } else
-            return redirect()->route('login');
+            return response("Gagal Login", 400);
         
     }
 }
